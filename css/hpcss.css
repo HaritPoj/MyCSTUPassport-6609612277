@@ -42,4 +42,7 @@ body{
 .img1{
     margin-left: auto;
     margin-right: auto;
+    display: grid;
+    place-items: auto;
+    padding: 60px 0;
 }
