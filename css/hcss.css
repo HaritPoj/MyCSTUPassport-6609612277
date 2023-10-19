@@ -1,5 +1,5 @@
 body {
-    background-color: cyan;
+    background-color: white;
 }
 .alpha {
     color:black;
@@ -41,4 +41,37 @@ a:hover {
 a:active {
     color:navy;
     text-decoration: none;
+}
+.navbar{
+    font-family: sans-serif;
+    width: fit-content%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
 }
