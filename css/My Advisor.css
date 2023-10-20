@@ -5,6 +5,20 @@ body {
     font-family: sans-serif;
     color: black;
 }
+.head1 {
+    margin-left: 70px;
+}
+.img {
+    margin-left: 70px;
+}
+.para1 {
+    padding-top: 30px;
+    margin-right: 150px;
+}
+.grid {
+    display: grid;
+    grid:auto / auto auto
+}
 .navbar{
     font-family: sans-serif;
     width: fit-content%;
