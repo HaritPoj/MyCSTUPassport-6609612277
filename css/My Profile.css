@@ -13,6 +13,23 @@ body {
 .gamma {
     margin-left: 10px;
     font-family: sans-serif;
+    display: grid;
+    grid: auto /auto auto;
+}
+@media screen and (max-width:480px) {
+    .gamma {
+        grid-template-columns: repeat(0,0fr);
+    }
+}
+.grid-items {
+    margin-left: 20px;
+}
+.p1 {
+    margin-left: 20px;
+}
+.table1 {
+    margin-left: 240px;
+    margin-right: 240px;
 }
 .delta {
     font-family: sans-serif;
