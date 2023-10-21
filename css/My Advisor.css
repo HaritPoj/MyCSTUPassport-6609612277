@@ -15,9 +15,22 @@ body {
     padding-top: 30px;
     margin-right: 150px;
 }
-.grid {
-    display: grid;
-    grid:auto / auto auto
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
+.flex-item-left {
+    padding: 10px;
+    flex: 50%;
+}
+.flex-item-right {
+    padding: 10px;
+    flex: 50%;
 }
 .navbar{
     font-family: sans-serif;

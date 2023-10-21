@@ -13,32 +13,31 @@ body {
 .gamma {
     margin-left: 10px;
     font-family: sans-serif;
-    display: grid;
-    grid: auto /auto auto;
+    display: flex;
+    flex-direction: row;
 }
-@media screen and (max-width:480px) {
+@media (max-width: 800px) {
     .gamma {
-        grid-template-columns: repeat(0,0fr);
+      flex-direction: column;
     }
 }
-.grid-items {
-    margin-left: 20px;
+.img1 {
+    margin-left: auto;
+    margin-right: auto;
 }
-.p1 {
-    margin-left: 20px;
+.flex-item-left {
+    padding: 10px;
+    flex: 50%;
+    margin-left: 120px;
 }
-.table1 {
-    margin-left: 240px;
-    margin-right: 240px;
+.flex-item-right {
+    padding: 10px;
+    flex: 50%;
+    margin-right: 120px;
 }
 .delta {
     font-family: sans-serif;
     text-align: center;
-}
-img {
-    margin-left:auto;
-    margin-right: auto;
-    
 }
 table, th, td{
     border: 1px solid black;
