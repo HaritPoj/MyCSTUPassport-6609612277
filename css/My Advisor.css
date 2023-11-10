@@ -19,7 +19,17 @@ body {
     display: flex;
     flex-direction: row;
 }
+@media (max-width: 1080px) {
+    .flex-container {
+      flex-direction: row;
+    }
+}
 @media (max-width: 980px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
+@media (max-width: 360px) {
     .flex-container {
       flex-direction: column;
     }
